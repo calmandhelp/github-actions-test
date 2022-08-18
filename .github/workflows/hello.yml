@@ -16,4 +16,5 @@ jobs:
           token: ${{ secrets.READ_WRITE_HOOK_RIGHTS }}
           path: abarg
       - name: run test
+        uses: abarg
         run: ls
