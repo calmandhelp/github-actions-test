@@ -14,6 +14,5 @@ jobs:
           repository: calmandhelp/abarg
           ref: master
           token: ${{ secrets.READ_WRITE_HOOK_RIGHTS }}
-          path: abarg
       - name: checkout repo
-        run: cd abarg && ls
+        run: ls
