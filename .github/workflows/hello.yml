@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-        with:
-          repository: calmandhelp/abarg
-          ref: master
-          token: ${{ secrets.READ_WRITE_HOOK_RIGHTS }}
-          path: abarg
+        # with:
+        #   repository: calmandhelp/abarg
+        #   ref: master
+        #   token: ${{ secrets.READ_WRITE_HOOK_RIGHTS }}
+        #   path: abarg
       - run: "echo hello"
       - run: ls
