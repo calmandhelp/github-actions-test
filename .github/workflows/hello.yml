@@ -8,11 +8,12 @@ jobs:
     name: echo workspace
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-        # with:
-        #   repository: calmandhelp/abarg
-        #   ref: master
-        #   token: ${{ secrets.READ_WRITE_HOOK_RIGHTS }}
-        #   path: abarg
-      - run: "echo hello"
-      - run: ls
+      - name: checkout repo
+        uses: actions/checkout@v1
+        with:
+          repository: calmandhelp/abarg
+          ref: master
+          token: ${{ secrets.READ_WRITE_HOOK_RIGHTS }}
+          path: abarg
+      - name: run test
+        run: ls
