@@ -13,4 +13,6 @@ jobs:
           repository: calmandhelp/abarg
           ref: master
           token: ${{ secrets.READ_WRITE_HOOK_RIGHTS }}
-        run: ls
+          path: abarg
+      - run: "echo hello"
+      - run: ls
