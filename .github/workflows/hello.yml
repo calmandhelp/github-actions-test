@@ -1,12 +1,12 @@
-name: Access files
+name: echo workspace
 on:
   push:
     branches: [master]
 
 jobs:
   build:
-    name: Check the contents of the file
+    name: echo workspace
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: cat sample.txt
+      - run: echo $GITHUB_WORKSPACE
