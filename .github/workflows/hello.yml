@@ -14,5 +14,5 @@ jobs:
           repository: calmandhelp/abarg
           ref: master
           token: ${{ secrets.READ_WRITE_HOOK_RIGHTS }}
-      - name: cat
-        run: cat Makefile
+      - name: test
+        run: ${{ echo github.repository }}
