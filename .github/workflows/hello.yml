@@ -15,4 +15,4 @@ jobs:
           ref: master
           token: ${{ secrets.READ_WRITE_HOOK_RIGHTS }}
       - name: test
-        run: ${{ echo github.repository }}
+        run: "echo ${{ github.repository }}"
