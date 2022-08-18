@@ -17,4 +17,4 @@ jobs:
           path: abarg
       - name: run test
         uses: ./abarg
-        run: ls
+        run: ls -a
