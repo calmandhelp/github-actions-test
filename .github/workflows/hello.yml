@@ -9,5 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+        with:
+          repository: calmandhelp/abarg
+          ref: master
       - run: "echo hello"
-      - run: ls
+      - run: tree
