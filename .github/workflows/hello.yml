@@ -14,4 +14,4 @@ jobs:
           ref: master
           token: ${{ secrets.READ_WRITE_HOOK_RIGHTS }}
       - run: "echo hello"
-      - run: tree
+      - run: ls
